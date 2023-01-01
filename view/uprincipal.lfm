@@ -1,20 +1,21 @@
 object frmprincipal: Tfrmprincipal
   Left = 966
-  Height = 440
+  Height = 666
   Top = 32
-  Width = 700
+  Width = 1086
   Caption = 'Sistema de Fluxo de Caixa'
-  ClientHeight = 440
-  ClientWidth = 700
+  ClientHeight = 666
+  ClientWidth = 1086
   OnCreate = FormCreate
+  OnShow = FormShow
   Position = poScreenCenter
   object pnpesquerda: TPanel
     Left = 0
-    Height = 440
+    Height = 666
     Top = 0
     Width = 137
     Align = alLeft
-    ClientHeight = 440
+    ClientHeight = 666
     ClientWidth = 137
     Color = 8399616
     ParentColor = False
@@ -47,7 +48,7 @@ object frmprincipal: Tfrmprincipal
       AnchorSideBottom.Side = asrCenter
       Left = 16
       Height = 40
-      Top = 376
+      Top = 602
       Width = 102
       Anchors = [akBottom]
       Caption = '&Sair'
@@ -57,7 +58,7 @@ object frmprincipal: Tfrmprincipal
     object btncfg: TBitBtn
       Left = 16
       Height = 40
-      Top = 327
+      Top = 199
       Width = 102
       Caption = 'Configura'
       OnClick = btncfgClick
@@ -66,9 +67,9 @@ object frmprincipal: Tfrmprincipal
   end
   object Label1: TLabel
     Left = 145
-    Height = 23
+    Height = 22
     Top = 8
-    Width = 154
+    Width = 140
     Caption = 'Plano de Contas'
     Font.Height = -19
     Font.Name = 'Sans'
@@ -79,7 +80,7 @@ object frmprincipal: Tfrmprincipal
     Left = 144
     Height = 2
     Top = 35
-    Width = 550
+    Width = 936
     Anchors = [akTop, akLeft, akRight]
   end
 end

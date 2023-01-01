@@ -10,7 +10,8 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, runtimetypeinfocontrols, uprincipal, uconfigurabanco
+  Forms, zcomponent, runtimetypeinfocontrols, uprincipal, uconfigurabanco,
+  udmConexao
   { you can add units after this };
 
 {$R *.res}
@@ -20,6 +21,7 @@ begin
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(Tfrmprincipal, frmprincipal);
+  Application.CreateForm(TDmConexao, DmConexao);
   Application.Run;
 end.
 

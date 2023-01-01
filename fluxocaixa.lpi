@@ -25,6 +25,9 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
+      <Item>
         <PackageName Value="RunTimeTypeInfoControls"/>
       </Item>
       <Item>
@@ -47,7 +50,16 @@
         <Filename Value="view/uconfigurabanco.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmconfigurabanco"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="conexao/udmconexao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DmConexao"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="udmConexao"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -57,8 +69,8 @@
       <Filename Value="fluxocaixa"/>
     </Target>
     <SearchPaths>
-      <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="view"/>
+      <IncludeFiles Value="$(ProjOutDir)/bin;$(ProjOutDir)"/>
+      <OtherUnitFiles Value="view;conexao"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
