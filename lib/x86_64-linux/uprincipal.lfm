@@ -1,0 +1,91 @@
+object frmprincipal: Tfrmprincipal
+  Left = 966
+  Height = 666
+  Top = 32
+  Width = 1086
+  Caption = 'Sistema de Fluxo de Caixa'
+  ClientHeight = 666
+  ClientWidth = 1086
+  Position = poScreenCenter
+  LCLVersion = '4.6.0.0'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  object pnpesquerda: TPanel
+    Left = 0
+    Height = 666
+    Top = 0
+    Width = 137
+    Align = alLeft
+    ClientHeight = 666
+    ClientWidth = 137
+    Color = 8399616
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object btnContas: TBitBtn
+      Left = 16
+      Height = 40
+      Top = 21
+      Width = 102
+      Caption = '&Contas'
+      TabOrder = 0
+      OnClick = btnContasClick
+    end
+    object btnPlanos: TBitBtn
+      Left = 16
+      Height = 40
+      Top = 81
+      Width = 102
+      Caption = '&Planos'
+      TabOrder = 1
+      OnClick = btnPlanosClick
+    end
+    object btnLancamentos: TBitBtn
+      Left = 16
+      Height = 40
+      Top = 141
+      Width = 102
+      Caption = '&Lançamentos'
+      TabOrder = 2
+      OnClick = btnLancamentosClick
+    end
+    object btnSair: TBitBtn
+      AnchorSideBottom.Side = asrCenter
+      Left = 16
+      Height = 40
+      Top = 602
+      Width = 102
+      Anchors = [akBottom]
+      Caption = '&Sair'
+      TabOrder = 3
+      OnClick = btnSairClick
+    end
+    object btncfg: TBitBtn
+      Left = 16
+      Height = 40
+      Top = 199
+      Width = 102
+      Caption = 'Configura'
+      TabOrder = 4
+      OnClick = btncfgClick
+    end
+  end
+  object Label1: TLabel
+    Left = 145
+    Height = 23
+    Top = 8
+    Width = 144
+    Caption = 'Plano de Contas'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Shape1: TShape
+    Left = 144
+    Height = 2
+    Top = 35
+    Width = 936
+    Anchors = [akTop, akLeft, akRight]
+  end
+end

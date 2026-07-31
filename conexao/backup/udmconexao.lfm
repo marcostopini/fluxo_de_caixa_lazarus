@@ -1,0 +1,20 @@
+object DmConexao: TDmConexao
+  OldCreateOrder = False
+  Height = 144
+  HorizontalOffset = 263
+  VerticalOffset = 31
+  Width = 289
+  object Conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    BeforeConnect = ConexaoBeforeConnect
+    Port = 3306
+    Protocol = 'MariaDB-10'
+    Left = 72
+    Top = 32
+  end
+end

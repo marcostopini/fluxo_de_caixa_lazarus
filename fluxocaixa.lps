@@ -7,7 +7,7 @@
       <Unit>
         <Filename Value="fluxocaixa.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="18" Y="9"/>
+        <CursorPos X="42" Y="8"/>
         <UsageCount Value="47"/>
         <Loaded Value="True"/>
       </Unit>
@@ -17,13 +17,10 @@
         <ComponentName Value="frmprincipal"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="53"/>
-        <CursorPos X="45" Y="65"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="89"/>
+        <CursorPos X="61" Y="98"/>
         <UsageCount Value="47"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="view/uconfigurabanco.pas"/>
@@ -31,8 +28,8 @@
         <ComponentName Value="frmconfigurabanco"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
-        <CursorPos X="42" Y="5"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="46"/>
         <UsageCount Value="46"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -44,8 +41,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="udmConexao"/>
-        <EditorIndex Value="3"/>
-        <CursorPos X="125" Y="23"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="59" Y="9"/>
         <UsageCount Value="30"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -66,67 +64,19 @@
         <UsageCount Value="9"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
+      <Unit>
+        <Filename Value="conexao/udmconexao.lfm"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="53" Y="7"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="view/uconfigurabanco.pas"/>
-        <Caret Line="72" Column="12" TopLine="44"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="34" TopLine="12"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uconfigurabanco.pas"/>
-        <Caret Line="71" Column="5" TopLine="50"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="33" TopLine="12"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uconfigurabanco.pas"/>
-        <Caret Line="71" Column="5" TopLine="50"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uconfigurabanco.pas"/>
-        <Caret Line="72" Column="13" TopLine="58"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="31" Column="17" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="107" TopLine="70"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="32" Column="3"/>
-      </Position>
+    <JumpHistory HistoryIndex="3">
       <Position>
         <Filename Value="view/uconfigurabanco.pas"/>
         <Caret Line="39" Column="60" TopLine="9"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="92" Column="5" TopLine="69"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="102" Column="5" TopLine="69"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="92" Column="5" TopLine="69"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="33" Column="60"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="97" Column="20" TopLine="68"/>
       </Position>
       <Position>
         <Filename Value="view/uconfigurabanco.pas"/>
@@ -137,56 +87,8 @@
         <Caret Line="63" Column="12" TopLine="32"/>
       </Position>
       <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="105" TopLine="68"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="19" Column="39"/>
-      </Position>
-      <Position>
-        <Filename Value="conexao/udmconexao.pas"/>
-        <Caret Line="5" Column="18"/>
-      </Position>
-      <Position>
-        <Filename Value="conexao/udmconexao.pas"/>
-        <Caret Line="19" Column="43"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="27" Column="16" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="conexao/udmconexao.pas"/>
-        <Caret Line="43" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="conexao/udmconexao.pas"/>
-        <Caret Line="39" Column="81" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="conexao/udmconexao.pas"/>
-        <Caret Line="16" Column="53" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="40" Column="54" TopLine="18"/>
-      </Position>
-      <Position>
         <Filename Value="view/uconfigurabanco.pas"/>
         <Caret Line="62" TopLine="58"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="29" Column="20"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="102" Column="39" TopLine="83"/>
-      </Position>
-      <Position>
-        <Filename Value="view/uprincipal.pas"/>
-        <Caret Line="72" Column="3" TopLine="57"/>
       </Position>
     </JumpHistory>
     <RunParams>
@@ -194,15 +96,4 @@
       <Modes ActiveMode=""/>
     </RunParams>
   </ProjectSession>
-  <Debugging>
-    <BreakPoints>
-      <Item>
-        <Kind Value="bpkSource"/>
-        <WatchScope Value="wpsLocal"/>
-        <WatchKind Value="wpkWrite"/>
-        <Source Value="view/uprincipal.pas"/>
-        <Line Value="65"/>
-      </Item>
-    </BreakPoints>
-  </Debugging>
 </CONFIG>

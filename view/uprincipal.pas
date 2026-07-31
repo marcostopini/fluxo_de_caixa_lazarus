@@ -22,6 +22,9 @@ type
     pnpesquerda: TPanel;
     Shape1: TShape;
     procedure btncfgClick(Sender: TObject);
+    procedure btnContasClick(Sender: TObject);
+    procedure btnLancamentosClick(Sender: TObject);
+    procedure btnPlanosClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -99,6 +102,21 @@ begin
   finally
     FreeAndNil(frmconfigurabanco);
   end;
+end;
+
+procedure Tfrmprincipal.btnContasClick(Sender: TObject);
+begin
+
+end;
+
+procedure Tfrmprincipal.btnLancamentosClick(Sender: TObject);
+begin
+
+end;
+
+procedure Tfrmprincipal.btnPlanosClick(Sender: TObject);
+begin
+
 end;
 
 procedure Tfrmprincipal.Ler_ini;
