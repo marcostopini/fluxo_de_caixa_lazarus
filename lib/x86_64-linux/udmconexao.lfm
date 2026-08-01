@@ -9,10 +9,14 @@ object DmConexao: TDmConexao
     Properties.Strings = (
       'AutoEncodeStrings=True'
       'controls_cp=CP_UTF8'
+      'RawStringEncoding=DB_CP'
     )
     BeforeConnect = ConexaoBeforeConnect
+    AfterConnect = ConexaoAfterConnect
+    DisableSavepoints = False
+    HostName = 'localhost'
     Port = 3306
-    Protocol = 'MariaDB-10'
+    Protocol = 'mariadb'
     Left = 72
     Top = 32
   end

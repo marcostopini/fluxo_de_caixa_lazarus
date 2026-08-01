@@ -7,8 +7,9 @@
       <Unit>
         <Filename Value="fluxocaixa.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="42" Y="8"/>
-        <UsageCount Value="47"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="16" Y="27"/>
+        <UsageCount Value="48"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -20,7 +21,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="89"/>
         <CursorPos X="61" Y="98"/>
-        <UsageCount Value="47"/>
+        <UsageCount Value="48"/>
       </Unit>
       <Unit>
         <Filename Value="view/uconfigurabanco.pas"/>
@@ -29,8 +30,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="46"/>
-        <UsageCount Value="46"/>
+        <TopLine Value="63"/>
+        <CursorPos X="56" Y="79"/>
+        <UsageCount Value="47"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -41,10 +43,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="udmConexao"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="59" Y="9"/>
-        <UsageCount Value="30"/>
+        <TopLine Value="23"/>
+        <CursorPos X="3" Y="56"/>
+        <UsageCount Value="31"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -73,7 +75,7 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="3">
+    <JumpHistory HistoryIndex="4">
       <Position>
         <Filename Value="view/uconfigurabanco.pas"/>
         <Caret Line="39" Column="60" TopLine="9"/>
@@ -89,6 +91,10 @@
       <Position>
         <Filename Value="view/uconfigurabanco.pas"/>
         <Caret Line="62" TopLine="58"/>
+      </Position>
+      <Position>
+        <Filename Value="conexao/udmconexao.pas"/>
+        <Caret Line="17" Column="43"/>
       </Position>
     </JumpHistory>
     <RunParams>

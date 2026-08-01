@@ -13,6 +13,7 @@ type
 
   TDmConexao = class(TDataModule)
     Conexao: TZConnection;
+    procedure ConexaoAfterConnect(Sender: TObject);
     procedure ConexaoBeforeConnect(Sender: TObject);
   private
 
@@ -47,6 +48,11 @@ begin
         Conexao.Database:= 'Driver={'+cfg_odbc +'}; server='+cfg_servidor+'; Database='+cfg_banco+'; User='+cfg_usuario+'; password='+cfg_senha+'; option=3;';
       end;
   {$EndIf}
+
+end;
+
+procedure TDmConexao.ConexaoAfterConnect(Sender: TObject);
+begin
 
 end;
 
