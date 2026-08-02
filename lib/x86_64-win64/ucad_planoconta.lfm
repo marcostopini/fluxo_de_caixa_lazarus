@@ -1,0 +1,59 @@
+inherited frmcad_planoconta: Tfrmcad_planoconta
+  Caption = 'Cadastro Plano de Contas'
+  inherited PageControl1: TPageControl
+    inherited tsCadastro: TTabSheet
+      object Label1: TLabel[1]
+        Left = 40
+        Height = 15
+        Top = 48
+        Width = 39
+        Caption = 'Código'
+      end
+      object edtCodigo: TEdit[2]
+        Left = 40
+        Height = 23
+        Top = 69
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 1
+      end
+      object Label2: TLabel[3]
+        Left = 40
+        Height = 15
+        Top = 112
+        Width = 51
+        Caption = 'Descrição'
+      end
+      object edtDescricao: TEdit[4]
+        Left = 40
+        Height = 23
+        Top = 133
+        Width = 376
+        CharCase = ecUppercase
+        TabOrder = 2
+      end
+      object Label3: TLabel[5]
+        Left = 40
+        Height = 15
+        Top = 176
+        Width = 23
+        Caption = 'Tipo'
+      end
+      object ComboBox1: TComboBox[6]
+        Left = 40
+        Height = 23
+        Top = 197
+        Width = 80
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'C'
+          'D'
+        )
+        Style = csDropDownList
+        TabOrder = 3
+        Text = 'C'
+      end
+    end
+  end
+end

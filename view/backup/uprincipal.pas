@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Buttons;
+  Buttons, DBCtrls;
 
 type
 
@@ -19,9 +19,12 @@ type
     btnLancamentos: TBitBtn;
     btnSair: TBitBtn;
     Label1: TLabel;
+    Label2: TLabel;
     pnpesquerda: TPanel;
     Shape1: TShape;
     procedure btncfgClick(Sender: TObject);
+    procedure btnContasClick(Sender: TObject);
+    procedure btnPlanosClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -44,7 +47,7 @@ var
 
 implementation
 
-uses uconfigurabanco, udmConexao, IniFiles ;
+uses uconfigurabanco, udmConexao, IniFiles, ucad_padrao, ucad_planoconta;
 
 {$R *.lfm}
 
@@ -72,7 +75,7 @@ begin
   if not FileExists(cfg_arqINI) then
     btncfg.Click;
 
-  Ler_ini;;
+  Ler_ini;
 
   try
     DmConexao.Conexao.Connect;
@@ -98,6 +101,26 @@ begin
     frmconfigurabanco.ShowModal;
   finally
     FreeAndNil(frmconfigurabanco);
+  end;
+end;
+
+procedure Tfrmprincipal.btnContasClick(Sender: TObject);
+begin
+   frmcad_padrao := Tfrmcad_padrao.Create(self);
+  try
+    frmcad_padrao.ShowModal;
+  finally
+    FreeAndNil(frmcad_padrao);
+  end;
+end;
+
+procedure Tfrmprincipal.btnPlanosClick(Sender: TObject);
+begin
+  frmcad_planoconta := Tfrmcad_planoconta.Create(self);
+  try
+    frmcad_planoconta.ShowModal;
+  finally
+    FreeAndNil(frmcad_planoconta);
   end;
 end;
 

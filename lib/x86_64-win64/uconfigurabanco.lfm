@@ -1,0 +1,140 @@
+object frmconfigurabanco: Tfrmconfigurabanco
+  Left = 527
+  Height = 330
+  Top = 227
+  Width = 563
+  Caption = 'Configura Banco'
+  ClientHeight = 330
+  ClientWidth = 563
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object Label1: TLabel
+    Left = 8
+    Height = 22
+    Top = 8
+    Width = 141
+    Caption = 'Configura Banco'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Shape1: TShape
+    Left = 7
+    Height = 2
+    Top = 35
+    Width = 550
+    Anchors = [akTop, akLeft, akRight]
+  end
+  object btnsalvar: TTIButton
+    Left = 376
+    Height = 29
+    Top = 272
+    Width = 79
+    Caption = 'Salvar'
+    OnClick = btnsalvarClick
+    TabOrder = 6
+  end
+  object btncancelar: TTIButton
+    Left = 461
+    Height = 29
+    Top = 272
+    Width = 79
+    Caption = 'Cancelar'
+    OnClick = btncancelarClick
+    TabOrder = 7
+  end
+  object edtPorta: TEdit
+    Left = 16
+    Height = 23
+    Top = 208
+    Width = 80
+    NumbersOnly = True
+    TabOrder = 4
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 190
+    Width = 28
+    Caption = 'Porta'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 16
+    Height = 15
+    Top = 126
+    Width = 43
+    Caption = 'Servidor'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 15
+    Top = 54
+    Width = 33
+    Caption = 'Banco'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 286
+    Height = 15
+    Top = 54
+    Width = 40
+    Caption = 'Usuário'
+    ParentColor = False
+  end
+  object edtUsuario: TEdit
+    Left = 286
+    Height = 23
+    Top = 72
+    Width = 256
+    TabOrder = 1
+  end
+  object edtBanco: TEdit
+    Left = 16
+    Height = 23
+    Top = 72
+    Width = 256
+    TabOrder = 0
+  end
+  object edtSevidor: TEdit
+    Left = 16
+    Height = 23
+    Top = 144
+    Width = 256
+    TabOrder = 2
+  end
+  object Label8: TLabel
+    Left = 286
+    Height = 15
+    Top = 126
+    Width = 32
+    Caption = 'Senha'
+    ParentColor = False
+  end
+  object edtSenha: TEdit
+    Left = 286
+    Height = 23
+    Top = 144
+    Width = 256
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 3
+  end
+  object Label9: TLabel
+    Left = 286
+    Height = 15
+    Top = 190
+    Width = 66
+    Caption = 'Driver ODBC'
+    ParentColor = False
+  end
+  object edtOdbc: TEdit
+    Left = 286
+    Height = 23
+    Top = 208
+    Width = 256
+    TabOrder = 5
+  end
+end

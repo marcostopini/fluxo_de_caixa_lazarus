@@ -1,0 +1,144 @@
+inherited frmcad_planoconta: Tfrmcad_planoconta
+  Caption = 'Cadastro Plano de Contas'
+  inherited PageControl1: TPageControl
+    ActivePage = tsPesquisa
+    TabIndex = 0
+    inherited tsPesquisa: TTabSheet
+      ClientHeight = 441
+      inherited Panel1: TPanel
+        BevelOuter = bvNone
+      end
+      object DBGrid1: TDBGrid[1]
+        Left = 0
+        Height = 394
+        Top = 47
+        Width = 774
+        Align = alClient
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'Código'
+            FieldName = 'id_plano'
+          end        
+          item
+            Title.Caption = 'Descrição'
+            Width = 400
+            FieldName = 'descricao'
+          end        
+          item
+            Title.Caption = 'Tipo'
+            Width = 50
+            FieldName = 'tipo'
+          end>
+        DataSource = dsPesquisa
+        TabOrder = 1
+      end
+    end
+    inherited tsCadastro: TTabSheet
+      ClientHeight = 441
+      inherited pnlrodape: TPanel
+        inherited btnIncluir: TBitBtn
+          OnClick = btnIncluirClick
+        end
+        inherited btnSalvar: TBitBtn
+          OnClick = btnSalvarClick
+        end
+      end
+      object Label1: TLabel[1]
+        Left = 40
+        Height = 17
+        Top = 48
+        Width = 45
+        Caption = 'Código'
+      end
+      object edtCodigo: TEdit[2]
+        Left = 40
+        Height = 27
+        Top = 69
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 1
+      end
+      object Label2: TLabel[3]
+        Left = 40
+        Height = 17
+        Top = 112
+        Width = 64
+        Caption = 'Descrição'
+      end
+      object edtDescricao: TEdit[4]
+        Left = 40
+        Height = 27
+        Top = 133
+        Width = 376
+        CharCase = ecUppercase
+        TabOrder = 2
+      end
+      object Label3: TLabel[5]
+        Left = 40
+        Height = 17
+        Top = 176
+        Width = 28
+        Caption = 'Tipo'
+      end
+      object ComboBox1: TComboBox[6]
+        Left = 40
+        Height = 27
+        Top = 197
+        Width = 80
+        ItemHeight = 0
+        ItemIndex = 0
+        Items.Strings = (
+          'C'
+          'D'
+        )
+        Style = csDropDownList
+        TabOrder = 3
+        Text = 'C'
+      end
+    end
+  end
+  object ZqryPesquisa: TZQuery[1]
+    Connection = DmConexao.Conexao
+    SQL.Strings = (
+      'select * from planos'
+    )
+    Params = <>
+    Left = 680
+    Top = 32
+    object ZqryPesquisaid_plano: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'id_plano'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZqryPesquisadescricao: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'descricao'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 80
+    end
+    object ZqryPesquisatipo: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tipo'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+  end
+  object dsPesquisa: TDataSource[2]
+    DataSet = ZqryPesquisa
+    Left = 600
+    Top = 32
+  end
+end

@@ -1,0 +1,27 @@
+# Arquivos gerados pelo Lazarus/Free Pascal
+*.o
+*.ppu
+*.compiled
+*.or
+*.a
+
+# Executáveis
+*.exe
+*.app
+fluxocaixa
+
+# Arquivos de estado do Lazarus
+*.lps
+
+# Diretórios de compilação
+lib/
+bin/
+
+# Backups
+backup/
+**/backup/
+
+# Arquivos temporários
+*.tmp
+*.bak
+*~

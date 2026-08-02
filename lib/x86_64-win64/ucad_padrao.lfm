@@ -1,0 +1,120 @@
+object frmcad_padrao: Tfrmcad_padrao
+  Left = 1665
+  Height = 472
+  Top = 222
+  Width = 784
+  Caption = 'Cadastro Padrão'
+  ClientHeight = 472
+  ClientWidth = 784
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 472
+    Top = 0
+    Width = 784
+    ActivePage = tsCadastro
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 0
+    object tsPesquisa: TTabSheet
+      Caption = 'Pesquisa'
+      ClientHeight = 444
+      ClientWidth = 776
+      OnShow = tsPesquisaShow
+      object Panel1: TPanel
+        Left = 0
+        Height = 47
+        Top = 0
+        Width = 776
+        Align = alTop
+        ClientHeight = 47
+        ClientWidth = 776
+        TabOrder = 0
+        object edtPesquisa: TEdit
+          Left = 15
+          Height = 23
+          Top = 6
+          Width = 425
+          TabOrder = 0
+        end
+        object btnPesquisa: TBitBtn
+          Left = 454
+          Height = 30
+          Top = 6
+          Width = 75
+          Caption = 'Pesquisa'
+          TabOrder = 1
+        end
+      end
+    end
+    object tsCadastro: TTabSheet
+      Caption = 'Cadastro'
+      ClientHeight = 444
+      ClientWidth = 776
+      object pnlrodape: TPanel
+        Left = 0
+        Height = 45
+        Top = 399
+        Width = 776
+        Align = alBottom
+        BevelOuter = bvNone
+        ClientHeight = 45
+        ClientWidth = 776
+        Color = 8399616
+        Font.Height = -16
+        Font.Name = 'Sans'
+        ParentBackground = False
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = pnlRodapeClick
+        object btnIncluir: TBitBtn
+          Left = 5
+          Height = 30
+          Top = 7
+          Width = 75
+          Caption = '&Incluir'
+          OnClick = btnIncluirClick
+          TabOrder = 0
+        end
+        object btnAlterar: TBitBtn
+          Left = 81
+          Height = 30
+          Top = 7
+          Width = 75
+          Caption = '&Alterar'
+          OnClick = btnAlterarClick
+          TabOrder = 1
+        end
+        object btnSalvar: TBitBtn
+          Left = 256
+          Height = 30
+          Top = 7
+          Width = 75
+          Caption = '&Salvar'
+          OnClick = btnSalvarClick
+          TabOrder = 2
+        end
+        object btnExcluir: TBitBtn
+          Left = 157
+          Height = 30
+          Top = 7
+          Width = 75
+          Caption = '&Excluir'
+          OnClick = btnExcluirClick
+          TabOrder = 3
+        end
+        object btnCancelar: TBitBtn
+          Left = 332
+          Height = 30
+          Top = 7
+          Width = 88
+          Caption = '&Cancelar'
+          OnClick = btnCancelarClick
+          TabOrder = 4
+        end
+      end
+    end
+  end
+end

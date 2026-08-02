@@ -1,0 +1,98 @@
+object frmprincipal: Tfrmprincipal
+  Left = -8
+  Height = 628
+  Top = -8
+  Width = 836
+  Caption = 'Sistema de Fluxo de Caixa'
+  ClientHeight = 605
+  ClientWidth = 836
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  WindowState = wsMaximized
+  object pnpesquerda: TPanel
+    Left = 0
+    Height = 605
+    Top = 0
+    Width = 146
+    Align = alLeft
+    ClientHeight = 605
+    ClientWidth = 146
+    Color = 8399616
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object btnContas: TBitBtn
+      Left = 16
+      Height = 40
+      Top = 21
+      Width = 108
+      Caption = '&Contas'
+      OnClick = btnContasClick
+      TabOrder = 0
+    end
+    object btnPlanos: TBitBtn
+      Left = 16
+      Height = 40
+      Top = 81
+      Width = 108
+      Caption = '&Planos'
+      OnClick = btnPlanosClick
+      TabOrder = 1
+    end
+    object btnLancamentos: TBitBtn
+      Left = 16
+      Height = 40
+      Top = 141
+      Width = 108
+      Caption = '&Lançamentos'
+      TabOrder = 2
+    end
+    object btnSair: TBitBtn
+      AnchorSideBottom.Side = asrCenter
+      Left = 20
+      Height = 40
+      Top = 541
+      Width = 108
+      Anchors = [akBottom]
+      Caption = '&Sair'
+      OnClick = btnSairClick
+      TabOrder = 3
+    end
+    object btncfg: TBitBtn
+      Left = 16
+      Height = 40
+      Top = 199
+      Width = 108
+      Caption = 'Configura'
+      OnClick = btncfgClick
+      TabOrder = 4
+    end
+  end
+  object Label1: TLabel
+    Left = 155
+    Height = 22
+    Top = 8
+    Width = 140
+    Caption = 'Plano de Contas'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Shape1: TShape
+    Left = 156
+    Height = 2
+    Top = 35
+    Width = 675
+    Anchors = [akTop, akLeft, akRight]
+  end
+  object Label2: TLabel
+    Left = 280
+    Height = 15
+    Top = 72
+    Width = 336
+    Caption = 'Parei no vídeo 19 - Criando enumerador e herdando tela padrão'
+    ParentColor = False
+  end
+end

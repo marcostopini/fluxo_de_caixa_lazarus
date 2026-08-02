@@ -1,0 +1,22 @@
+object DmConexao: TDmConexao
+  OldCreateOrder = False
+  Height = 144
+  HorizontalOffset = 560
+  VerticalOffset = 240
+  Width = 289
+  object Conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+      'RawStringEncoding=DB_CP'
+    )
+    BeforeConnect = ConexaoBeforeConnect
+    DisableSavepoints = False
+    Port = 3306
+    Database = 'Provider=MSDASQL.1;Password=Info@1234;Persist Security Info=True;User ID=suporte;Data Source=FluxoCaixa'
+    Protocol = 'ado'
+    Left = 72
+    Top = 32
+  end
+end

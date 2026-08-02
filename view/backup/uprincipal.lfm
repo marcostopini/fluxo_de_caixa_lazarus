@@ -1,72 +1,77 @@
 object frmprincipal: Tfrmprincipal
-  Left = 966
-  Height = 666
-  Top = 32
-  Width = 1086
+  Left = -8
+  Height = 628
+  Top = -8
+  Width = 836
   Caption = 'Sistema de Fluxo de Caixa'
-  ClientHeight = 666
-  ClientWidth = 1086
+  ClientHeight = 628
+  ClientWidth = 836
+  Position = poScreenCenter
+  LCLVersion = '4.6.0.0'
+  WindowState = wsMaximized
   OnCreate = FormCreate
   OnShow = FormShow
-  Position = poScreenCenter
   object pnpesquerda: TPanel
     Left = 0
-    Height = 666
+    Height = 605
     Top = 0
-    Width = 137
+    Width = 146
     Align = alLeft
-    ClientHeight = 666
-    ClientWidth = 137
+    ClientHeight = 605
+    ClientWidth = 146
     Color = 8399616
+    ParentBackground = False
     ParentColor = False
     TabOrder = 0
     object btnContas: TBitBtn
       Left = 16
       Height = 40
       Top = 21
-      Width = 102
+      Width = 108
       Caption = '&Contas'
       TabOrder = 0
+      OnClick = btnContasClick
     end
     object btnPlanos: TBitBtn
       Left = 16
       Height = 40
       Top = 81
-      Width = 102
+      Width = 108
       Caption = '&Planos'
       TabOrder = 1
+      OnClick = btnPlanosClick
     end
     object btnLancamentos: TBitBtn
       Left = 16
       Height = 40
       Top = 141
-      Width = 102
+      Width = 108
       Caption = '&Lançamentos'
       TabOrder = 2
     end
     object btnSair: TBitBtn
       AnchorSideBottom.Side = asrCenter
-      Left = 16
+      Left = 20
       Height = 40
-      Top = 602
-      Width = 102
+      Top = 541
+      Width = 108
       Anchors = [akBottom]
       Caption = '&Sair'
-      OnClick = btnSairClick
       TabOrder = 3
+      OnClick = btnSairClick
     end
     object btncfg: TBitBtn
       Left = 16
       Height = 40
       Top = 199
-      Width = 102
+      Width = 108
       Caption = 'Configura'
-      OnClick = btncfgClick
       TabOrder = 4
+      OnClick = btncfgClick
     end
   end
   object Label1: TLabel
-    Left = 145
+    Left = 155
     Height = 22
     Top = 8
     Width = 140
@@ -77,10 +82,18 @@ object frmprincipal: Tfrmprincipal
     ParentFont = False
   end
   object Shape1: TShape
-    Left = 144
+    Left = 156
     Height = 2
     Top = 35
-    Width = 936
+    Width = 675
     Anchors = [akTop, akLeft, akRight]
+  end
+  object Label2: TLabel
+    Left = 280
+    Height = 15
+    Top = 72
+    Width = 336
+    Caption = 'Parei no vídeo 19 - Criando enumerador e herdando tela padrão'
+    ParentColor = False
   end
 end
